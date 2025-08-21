@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-dark: #1243A6;
+    --primary: #1D64F2;
+    --dark: #011C40;
+    --light: #F2EED8;
+    --accent: #F24822;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDelay {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDelay2 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeInDelay 0.8s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeInDelay2 0.8s ease-out 0.6s both;
+}
+
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-step {
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial {
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 50vh;
+        padding: 3rem 1rem !important;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-section p {
+        font-size: 1rem !important;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .overflow-x-auto table {
+        font-size: 0.875rem;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem !important;
+    }
+    
+    .text-4xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.translate-y-5 {
+    transform: translateY(1.25rem);
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

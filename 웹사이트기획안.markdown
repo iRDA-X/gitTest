@@ -1,0 +1,74 @@
+---
+description: AI 비전 솔루션 서비스 랜딩 페이지 기획안
+globs: ["*.html", "*.css", "*.js"]
+alwaysApply: false
+---
+
+# AI 비전 솔루션 서비스 랜딩 페이지 기획안
+
+## 1. 프로젝트 개요
+- **서비스명**: iRDA-X AI Vision Solutions
+- **목적**: 
+  - AI 비전 솔루션 에이전트 서비스 홍보
+  - 잠재 고객 상담 신청 유도
+- **배포 방식**: GitHub Pages 또는 정적 호스팅
+- **폴더 구조**: 단일 폴더 구조 (HTML, CSS, JS 분리 관리)
+
+### 중요 사항
+- **Git 관리 규칙**  
+  - Git 명령어는 Github mcp 를 사용해서 수행합니다
+- **테스트 규칙**  
+  - puppeteer mcp 를 활용해 브라우저 테스트 수행
+- **반응형 페이지**  
+  - Mobile-first approach  
+  - 폰트와 문자 가독성 최우선
+
+---
+
+## 2. 기술 스택
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
+- Tailwind CSS
+
+---
+
+## 3. 페이지 섹션 구조
+1. **Hero Section**  
+   - 메인 타이틀, 서브 타이틀, CTA 버튼
+2. **Service Introduction**  
+   - 3가지 핵심 장점 카드 레이아웃
+3. **Features Section**  
+   - AI 비전 솔루션의 주요 기능 4가지 소개
+4. **Pricing Section**  
+   - 기존 업체 vs iRDA-X 서비스 비교 테이블
+5. **Process Section**  
+   - 4단계 서비스 프로세스 시각화
+6. **Testimonials Section**  
+   - 고객 후기 (Carousel 또는 Grid)
+7. **CTA Section**  
+   - 최종 상담 유도 CTA 버튼
+8. **Footer**  
+   - 회사 정보, 연락처, 패밀리 웹사이트 링크
+
+---
+
+## 4. 개발 규칙
+- 프레임워크 및 빌드 도구 사용 금지 (순수 HTML, CSS, JS만 사용)
+- HTML, CSS, JS 파일 분리
+- ES6+ 문법 활용
+- 반응형 디자인 (모바일 → 데스크탑)
+- 부드러운 스크롤 애니메이션
+- Intersection Observer 활용 스크롤 애니메이션
+- 폼 유효성 검사 구현 (이메일, 연락처 필수 입력)
+
+---
+
+## 5. 디자인 가이드라인
+### 색상 팔레트 (UMAUMA Icons 테마)
+```css
+--primary-dark: #1243A6;    /* 진한 파랑 - 주요 버튼, 헤더 */
+--primary: #1D64F2;         /* 밝은 파랑 - 링크, 하이라이트 */
+--dark: #011C40;            /* 네이비 - 텍스트, 배경 */
+--light: #F2EED8;           /* 크림 - 배경, 카드 */
+--accent: #F24822;          /* 오렌지레드 - CTA, 강조 */

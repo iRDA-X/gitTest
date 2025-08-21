@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRDA-X AI Vision Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1243A6',
+                        'primary': '#1D64F2',
+                        'dark': '#011C40',
+                        'light': '#F2EED8',
+                        'accent': '#F24822'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark">
+    <header class="fixed w-full top-0 z-50 bg-primary-dark text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">iRDA-X AI Vision</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#hero" class="hover:text-accent transition-colors">홈</a></li>
+                <li><a href="#services" class="hover:text-accent transition-colors">서비스</a></li>
+                <li><a href="#features" class="hover:text-accent transition-colors">기능</a></li>
+                <li><a href="#pricing" class="hover:text-accent transition-colors">가격</a></li>
+                <li><a href="#process" class="hover:text-accent transition-colors">프로세스</a></li>
+                <li><a href="#testimonials" class="hover:text-accent transition-colors">후기</a></li>
+            </ul>
+            <button id="mobileMenuBtn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-primary-dark">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#hero" class="block py-2 hover:text-accent">홈</a></li>
+                <li><a href="#services" class="block py-2 hover:text-accent">서비스</a></li>
+                <li><a href="#features" class="block py-2 hover:text-accent">기능</a></li>
+                <li><a href="#pricing" class="block py-2 hover:text-accent">가격</a></li>
+                <li><a href="#process" class="block py-2 hover:text-accent">프로세스</a></li>
+                <li><a href="#testimonials" class="block py-2 hover:text-accent">후기</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section bg-gradient-to-br from-primary-dark to-primary text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">AI 비전 솔루션으로 미래를 변화시키세요</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-delay">첨단 AI 기술로 비즈니스 효율성을 극대화하고 새로운 가능성을 발견하세요</p>
+                <button id="ctaBtn" class="bg-accent hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 animate-fade-in-delay-2">
+                    무료 상담 신청하기
+                </button>
+            </div>
+        </section>
+
+        <!-- Service Introduction -->
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">핵심 장점</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-card bg-light p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-dark">빠른 처리 속도</h3>
+                        <p class="text-gray-600">최첨단 AI 엔진으로 실시간 이미지 분석 및 처리가 가능합니다</p>
+                    </div>
+                    <div class="service-card bg-light p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-dark">높은 정확도</h3>
+                        <p class="text-gray-600">99.5% 이상의 정확도로 신뢰할 수 있는 결과를 제공합니다</p>
+                    </div>
+                    <div class="service-card bg-light p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-dark">맞춤형 솔루션</h3>
+                        <p class="text-gray-600">각 기업의 특성에 맞는 맞춤형 AI 솔루션을 제공합니다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">주요 기능</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-lg font-bold mb-3 text-primary">객체 인식</h3>
+                        <p class="text-gray-600">이미지 내 다양한 객체를 정확하게 식별하고 분류합니다</p>
+                    </div>
+                    <div class="feature-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-lg font-bold mb-3 text-primary">얼굴 인식</h3>
+                        <p class="text-gray-600">고도화된 얼굴 인식 기술로 보안 시스템을 강화합니다</p>
+                    </div>
+                    <div class="feature-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-lg font-bold mb-3 text-primary">문자 인식 (OCR)</h3>
+                        <p class="text-gray-600">이미지 속 텍스트를 정확하게 인식하고 추출합니다</p>
+                    </div>
+                    <div class="feature-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-lg font-bold mb-3 text-primary">품질 검사</h3>
+                        <p class="text-gray-600">제품 품질을 자동으로 검사하고 불량품을 탐지합니다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">가격 비교</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full max-w-4xl mx-auto bg-light rounded-lg shadow-lg overflow-hidden">
+                        <thead class="bg-primary-dark text-white">
+                            <tr>
+                                <th class="py-4 px-6 text-left">항목</th>
+                                <th class="py-4 px-6 text-center">기존 업체</th>
+                                <th class="py-4 px-6 text-center">iRDA-X</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-4 px-6 font-semibold">구축 비용</td>
+                                <td class="py-4 px-6 text-center">5,000만원~</td>
+                                <td class="py-4 px-6 text-center text-accent font-bold">1,000만원~</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="py-4 px-6 font-semibold">구축 기간</td>
+                                <td class="py-4 px-6 text-center">6개월~</td>
+                                <td class="py-4 px-6 text-center text-accent font-bold">2주~</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-6 font-semibold">정확도</td>
+                                <td class="py-4 px-6 text-center">90%~95%</td>
+                                <td class="py-4 px-6 text-center text-accent font-bold">99.5%+</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-4 px-6 font-semibold">유지보수</td>
+                                <td class="py-4 px-6 text-center">별도 비용</td>
+                                <td class="py-4 px-6 text-center text-accent font-bold">무료 지원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">서비스 프로세스</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="process-step text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">1</div>
+                        <h3 class="text-lg font-bold mb-2 text-dark">상담 신청</h3>
+                        <p class="text-gray-600">고객의 요구사항을 파악하고 맞춤형 솔루션을 제안합니다</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">2</div>
+                        <h3 class="text-lg font-bold mb-2 text-dark">시스템 분석</h3>
+                        <p class="text-gray-600">기존 시스템을 분석하고 최적의 통합 방안을 수립합니다</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">3</div>
+                        <h3 class="text-lg font-bold mb-2 text-dark">솔루션 구축</h3>
+                        <p class="text-gray-600">AI 모델을 학습시키고 고객 환경에 최적화합니다</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">4</div>
+                        <h3 class="text-lg font-bold mb-2 text-dark">운영 지원</h3>
+                        <p class="text-gray-600">시스템 운영을 지원하고 지속적인 성능 개선을 제공합니다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">고객 후기</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="testimonial bg-light p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">A</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-dark">A 제조업체</h4>
+                                <p class="text-gray-600">품질관리팀 김○○</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"품질 검사 시간이 80% 단축되었고, 불량률도 현저히 감소했습니다. 정말 만족스러운 결과입니다."</p>
+                    </div>
+                    <div class="testimonial bg-light p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">B</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-dark">B 보안업체</h4>
+                                <p class="text-gray-600">보안팀 이○○</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"얼굴 인식 정확도가 뛰어나고 오탐지율이 현저히 낮아 보안 시스템의 신뢰성이 크게 향상되었습니다."</p>
+                    </div>
+                    <div class="testimonial bg-light p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">C</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-dark">C 물류회사</h4>
+                                <p class="text-gray-600">운영팀 박○○</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"문서 처리 자동화로 업무 효율성이 크게 개선되었고, 인력 운영 비용도 절감할 수 있었습니다."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-gradient-to-r from-primary-dark to-primary text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">지금 바로 AI 비전 솔루션을 경험해보세요</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">무료 상담을 통해 귀하의 비즈니스에 최적화된 AI 솔루션을 제안받아보세요</p>
+                <form id="consultationForm" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-dark">무료 상담 신청</h3>
+                    <div class="space-y-4">
+                        <input type="text" id="companyName" placeholder="회사명" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-dark">
+                        <input type="text" id="contactName" placeholder="담당자명" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-dark">
+                        <input type="email" id="contactEmail" placeholder="이메일" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-dark">
+                        <input type="tel" id="contactPhone" placeholder="연락처" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-dark">
+                        <textarea id="inquiryContent" placeholder="문의 내용" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-dark"></textarea>
+                        <button type="submit" class="w-full bg-accent hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                            상담 신청하기
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">iRDA-X AI Vision Solutions</h3>
+                    <p class="text-gray-300">첨단 AI 기술로 비즈니스 혁신을 이끄는 파트너</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">연락처</h4>
+                    <p class="text-gray-300">이메일: contact@irda-x.com</p>
+                    <p class="text-gray-300">전화: 02-1234-5678</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">패밀리 사이트</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors">UMAUMA Solutions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors">AI Research Lab</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors">Tech Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2025 iRDA-X AI Vision Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
